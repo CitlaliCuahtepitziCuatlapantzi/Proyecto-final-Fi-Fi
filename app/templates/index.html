@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fi&Fi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+  
+<body>
+    <!-- Encabezado -->
+    <div class="dashboard">
+      <div class="profile-rosa neo-box">
+        <h1>EDUCACIÓN FISCAL Y FINANCIERA</h1>
+      </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <a href="{{ url_for('main.index') }}" class="boton">Inicio</a>
+        <a href="{{ url_for('main.login') }}" class="boton">Acceso</a>
+        <a href="{{ url_for('main.eliminar_cuenta') }}" class="boton">Eliminar cuenta</a>
+        <a href="{{ url_for('main.ver_registros') }}" class="boton">Ver Participantes</a>
+      </div>
+    </div>
+
+  
+    <!-- Presentación -->
+    <div class="dashboard">
+      <div class="profile-amarillo neo-box">
+        <img class="move" src="https://cdn-icons-png.flaticon.com/512/9325/9325960.png">
+        <img class="move" src="https://cdn-icons-png.flaticon.com/512/9325/9325974.png">
+      </div>
+    </div>
+
+    <!-- Definiciones -->
+  
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/2953/2953423.png">
+        <h2>EDUCACIÓN FINANCIERA</h2>
+      <h2>La educación financiera se refiere al proceso de adquirir conocimientos y habilidades relacionados con la gestión del dinero, la toma de decisiones financieras y la comprensión de los conceptos económicos. El objetivo principal de la educación financiera es capacitar a las personas para que tomen decisiones informadas y efectivas sobre sus recursos financieros, tanto a nivel personal como familiar.</h2>
+      </div>
+    </div>
+  
+  
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/10750/10750030.png">
+        <h2>EDUCACIÓN FISCAL</h2>
+      <h2>La educación fiscal se refiere al proceso de proporcionar conocimientos y habilidades relacionadas con el sistema fiscal, los impuestos y las responsabilidades fiscales a nivel personal y empresarial. El objetivo principal de la educación fiscal es informar a los individuos y a la sociedad en general sobre cómo funcionan los impuestos, cómo cumplir con las obligaciones fiscales y cómo tomar decisiones financieras informadas en el contexto tributario.</h2>
+      </div>
+    </div>
+  
+  <!-- Formulario -->
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <h2>¡Únete a nosotros!</h2>
+        <button class="boton" id="botonFormulario"><a>Inscríbete ahora</a></button>
+        <script src="{{ url_for('static',filename='js/script.js') }}">          </script>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="dashboard">
+        <div class="profile-rosa neo-box">
+          <h2>2023 Fi&Fi - Educación Fiscal y Financiera</h2>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,233 @@
+/*Estilos generales*/
+body {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #95cdca;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+	  overflow-x: hidden;
+	  width: 100%;
+}
+
+
+h1 {
+    font-family: 'Arial Black', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold; 
+}
+
+
+/*Estilo de cuatros de texto*/
+
+.dashboard {                                         
+	padding: 20px;
+	padding-right: 60px;
+}                                                      
+
+.neo-box {   
+    box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 7px 10px 0px 3px rgba(0, 0, 0, 1);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.profile-amarillo {   /*Caja amarilla*/
+	margin: 15px;
+	background-color: #f2d048;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-align: center;
+}
+
+.profile-rosa {
+	margin: 15px;
+	background-color: #c27cce;
+	padding: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.profile {   /* Caja blanca */
+    margin: 15px;
+    background-color: #ffffff;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+
+/*Posición de imagenes*/
+
+.profile img {    
+	width: 50px;
+	padding-left: 0px;
+	padding-top: 0px;
+  display: inline-block;
+}
+
+.profile-amarillo img.move {
+    position: relative;
+    top: 20px;
+    animation: moveDown 2s infinite alternate;
+}
+
+
+@keyframes moveDown {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px); 
+    }
+}
+
+
+
+
+/* Estilos para los Botones */
+.boton {
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #208763;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transform: translateY(-5px);
+	  box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+  
+}
+
+.boton:hover {
+    transform: translateY(0px);
+  	box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+}
+
+/* Estilos para Formularios */
+
+form {
+    background-color: #6494cf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box;
+    transform: translateY(-5px);
+	  box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 6px 0px 2px rgba(0,0,0,1);
+}
+
+input[type="submit"] {
+    font-family: 'Arial Black', sans-serif;
+    background-color: #f2d048;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(0px);
+  	box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+    -webkit-box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 5px 0px 0px rgba(0,0,0,1);
+}
+
+/* Estilos para Tablas */
+
+table tr th {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    color: black;
+}
+
+table tr td,
+table tr th {
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    padding-right: 8px; 
+}
+
+table {
+    margin: auto;
+    margin-bottom: 32px; 
+}
+
+table tr td {
+    border: 1px;
+    border-radius: 10px;
+    padding: 8px; 
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 1);
+}
+
+table tr td:first-child {
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilos para Listas */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+

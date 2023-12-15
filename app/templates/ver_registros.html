@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fi&Fi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+<body>
+  <div class="dashboard">
+    <div class="profile-rosa neo-box">
+    <img src="https://cdn-icons-png.flaticon.com/512/12639/12639960.png">
+    <h1>Participantes</h1>
+    <ul>
+        <!-- Jinja2 -->
+        {% for persona in personas %}
+        <li>{{persona.nombre}} {{persona.apellido}}  -  {{persona.email}}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('main.index') }}" class="boton" >Inicio</a>
+    </div>
+  </div>
+</body>
+</html>

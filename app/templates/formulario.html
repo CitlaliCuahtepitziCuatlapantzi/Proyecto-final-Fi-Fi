@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fi&Fi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+  
+<body>
+  
+    <!-- Encabezado -->
+    <div class="dashboard">
+      <div class="profile-rosa neo-box">
+        <h1>EDUCACIÓN FISCAL Y FINANCIERA</h1>
+      </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <a href="{{ url_for('main.index') }}" class="boton">Inicio</a>
+        <a href="{{ url_for('main.cursos') }}" class="boton">Cursos</a>
+        <a href="{{ url_for('main.ver_registros') }}" class="boton">Ver Participantes</a>
+      </div>
+    </div>
+  
+  <!-- Pie de Página -->
+    <h1>Formulario</h1>
+    <div class="dashboard">
+      <div class="profile-amarillo neo-box">
+        <img class="move" src="https://cdn-icons-png.flaticon.com/512/8043/8043035.png">
+      </div>
+    </div>
+    <form action="{{ url_for('main.submit_form') }}" method="post">
+      
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+      
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br> 
+      
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+      
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="dashboard">
+        <div class="profile-rosa neo-box">
+          <h2>2023 Fi&Fi - Educación Fiscal y Financiera</h2>
+        </div>
+      </div>
+    </footer>
+</body>
+  
+</html>

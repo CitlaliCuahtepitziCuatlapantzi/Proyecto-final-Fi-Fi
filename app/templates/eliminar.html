@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fi&Fi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+  
+<body>
+  
+    <!-- Barra de Navegación -->
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <a href="{{ url_for('main.index') }}" class="boton">Inicio</a>
+      </div>
+    </div>
+  
+  <!-- Formulario -->
+    <h1>Eliminar cuenta</h1>
+    <div class="dashboard">
+      <div class="profile-amarillo neo-box">
+        <img class="move" src="https://cdn-icons-png.flaticon.com/512/6976/6976773.png">
+      </div>
+    </div>
+    <form action="{{ url_for('main.eliminar_cuenta') }}" method="post">
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br> 
+      
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br>
+      
+        <input type="submit" value="Eliminar">
+    </form>
+  
+</body>
+  
+</html>

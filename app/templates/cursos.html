@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Fi&Fi</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/estilos.css') }}">
+</head>
+  
+
+<body>
+  
+    <!-- Encabezado -->
+    <div class="dashboard">
+      <div class="profile-rosa neo-box">
+        <h1>EDUCACIÓN FISCAL Y FINANCIERA</h1>
+      </div>
+    </div>
+
+    <!-- Barra de Navegación -->
+    <div class="dashboard">
+      <div class="profile neo-box">
+        <a href="{{ url_for('main.index') }}" class="boton">Inicio</a>
+      </div>
+    </div>
+
+  
+    <!-- Cursos -->
+    <div class="dashboard">
+      <div class="profile-amarillo neo-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/9325/9325973.png" /><h2>EDUCACIÓN FISCAL</h2>
+        <table>
+          <tr><th>Cursos</th><th>Duración</th></tr>
+          <tr><td>Sistema tributario</td><td>30 min</td></tr>
+          <tr><td>Responsabilidades fiscles</td><td>45 min</td></tr>
+          <tr><td>Declaración de Impuestos</td><td>60 min</td></tr>
+         </table>
+         <button class="boton" <h2><a href="#">Ir</a></h2></button>
+      </div>
+    </div>
+    
+
+    <div class="dashboard">
+      <div class="profile-amarillo neo-box">
+        <img src="https://cdn-icons-png.flaticon.com/512/9325/9325976.png" /><h2>EDUCACIÓN FINANCIERA</h2>
+        <table>
+          <tr><th>Cursos</th><th>Duración</th></tr>
+          <tr><td>Ahorro e inversiones</td><td>30 min</td></tr>
+          <tr><td>Manejo de crédito</td><td>45 min</td></tr>
+          <tr><td>Seguros</td><td>60 min</td></tr>
+          <tr><td>Presupuesto y planeación financiera</td><td>40 min</td></tr>
+          <tr><td>Plan de jubilación</td><td>50 min</td></tr>
+         </table>
+         <button class="boton" <h2><a href="#">Ir</a></h2></button>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="dashboard">
+        <div class="profile-rosa neo-box">
+          <h2>2023 Fi&Fi - Educación Fiscal y Financiera</h2>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
